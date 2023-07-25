@@ -1,3 +1,5 @@
+# Serializers are used to convert model instances(Model queries) into python dictionary data type 
+
 from rest_framework import serializers
 from .models import MovieData
 
@@ -5,4 +7,4 @@ from .models import MovieData
 class MovieSerializer(serializers.ModelSerializer):
     class Meta:
         model = MovieData
-        fields = ['id', 'name', 'duration', 'rating']
+        fields = ['id', 'name', 'duration', 'rating', 'category']
